@@ -64,6 +64,7 @@ img{
   color: rgb(144, 149, 152);
   font-size: .9rem;
   text-align: left;
+  padding-bottom: 1rem;
   margin-bottom: 2rem;
 }
 .introduce-header{

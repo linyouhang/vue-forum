@@ -9,6 +9,10 @@ import router from './router'
 import store from './store'
 
 axios.defaults.baseURL = 'http://localhost:3000/'
+axios.interceptors.request.use(config => {
+  config.headers.Authorization = window.sessionStorage.getItem('token')
+  return config
+})
 Vue.use(ElementUI)
 Vue.use(VueAxios, axios)
 Vue.config.productionTip = false

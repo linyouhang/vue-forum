@@ -101,6 +101,7 @@ export default {
               message: '恭喜你，注册成功',
               type: 'success'
               });
+              sessionStorage.setItem('token', res.token)
               this.$router.push('/')
             }
           })
@@ -121,8 +122,7 @@ export default {
 </script>
 
 <style scoped>
-  .el-form{
-    max-width: 20rem;
-    margin: 5rem auto;
+  .el-form-item{
+    width: 20rem;
   }
 </style>

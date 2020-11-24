@@ -3,9 +3,6 @@
     <el-form-item label="邮箱" prop="email" required>
       <el-input v-model="loginForm.email" autocomplete="off"></el-input>
     </el-form-item>
-    <el-form-item label="昵称" prop="nickname" required>
-      <el-input v-model="loginForm.nickname" autocomplete="off"></el-input>
-    </el-form-item>
     <el-form-item label="密码" prop="password" required>
       <el-input type="password" v-model="loginForm.password" autocomplete="off"></el-input>
     </el-form-item>
@@ -33,8 +30,7 @@ name: 'LoginFrom',
     return {
       loginForm: {
         password: '',
-        email: '',
-        nickname: ''
+        email: ''
       },
       rules: {
         password: [
@@ -42,10 +38,6 @@ name: 'LoginFrom',
         ],
         email: [
           { validator: checkEmail, trigger: 'blur' }
-        ],
-        nickname: [
-          { required: true, message: '请输入昵称', trigger: 'blur' },
-          { min:3, max:5, message: '长度在3到5个字符', trigger: 'blur' }
         ]
       }
     };
@@ -70,6 +62,7 @@ name: 'LoginFrom',
               message: '恭喜你，登入成功',
               type: 'success'
               });
+              sessionStorage.setItem('token', res.token)
               this.$router.push('/')
             }
           })
@@ -90,8 +83,8 @@ name: 'LoginFrom',
 </script>
 
 <style scoped>
-.el-form{
-    max-width: 20rem;
-    margin: 5rem auto;
+
+  .el-form-item{
+    width: 20rem;
   }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="contanier">
     <RegisterForm v-show="!isLogin"></RegisterForm>
     <a @click="onClick" v-show="!isLogin">已有账号去登入</a>
     <LoginForm v-show="isLogin"></LoginForm>
@@ -19,7 +19,7 @@ export default {
   },
   data() {
     return {
-      isLogin: false
+      isLogin: true
     }
   },
   methods: {
@@ -35,5 +35,9 @@ a{
   cursor: pointer;
   text-align: center;
   color:#42b983;
+}
+.contanier{
+  width: 50rem;
+  margin: 10rem auto;
 }
 </style>

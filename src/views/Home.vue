@@ -2,6 +2,7 @@
   <div class="home">
     <AppHeader></AppHeader>
     <AppMain></AppMain>
+    <el-backtop></el-backtop>
   </div>
 </template>
 
@@ -17,3 +18,5 @@ export default {
   }
 }
 </script>
+<style scoped>
+</style>
