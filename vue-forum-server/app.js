@@ -10,6 +10,8 @@ let app = express()
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 
+app.use('/public/',express.static('./public/'))
+
 // parse application/json
 app.use(bodyParser.json())
 app.use(cors())

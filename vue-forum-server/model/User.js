@@ -26,7 +26,7 @@ let userSchema = new Schema({
   },
   avatar: {
     type: String,
-    default: '默认图片'
+    default: 'http://localhost:3000/public/img/avatar.png'
   },
   bio: {
     type: String,
@@ -39,6 +39,10 @@ let userSchema = new Schema({
   },
   birthday: {
     type: Date
+  },
+  class: {
+    type: String,
+    default: '普通用户'
   },
   status: {
     type: Number,
