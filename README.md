@@ -1,6 +1,14 @@
 # node-forum
 
 ## Project setup
+进入vue-forum-server后端项目目录
+```
+npm install
+```
+```
+node app.js
+```
+退出进入前端目录
 ```
 npm install
 ```
