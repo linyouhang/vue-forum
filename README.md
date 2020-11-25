@@ -8,7 +8,7 @@
 ## Project setup
 
 为确保项目正常运行,请先运行前端再运行后端
-
+# 1.
 ```
 cd vue-forum-sever
 ```
@@ -18,8 +18,7 @@ npm install
 ```
 node app.js
 ```
-
-
+# 2.
 ```
 cd vue-forum
 ```
