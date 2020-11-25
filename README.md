@@ -1,19 +1,31 @@
-# node-forum
+## 技术栈
+前端： vue2,es6
+后端： express
+
+项目预览地址：[linyouhang.cn/forum]
+
 
 ## Project setup
-进入vue-forum-server后端项目目录
+
+为确保项目正常运行,请先运行前端再运行后端
+
+```
+cd vue-forum-sever
+```
 ```
 npm install
 ```
 ```
 node app.js
 ```
-退出进入前端目录
+
+
+```
+cd vue-forum
+```
 ```
 npm install
 ```
-
-### Compiles and hot-reloads for development
 ```
 npm run serve
 ```
@@ -23,5 +35,3 @@ npm run serve
 npm run build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
