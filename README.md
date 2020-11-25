@@ -2,7 +2,7 @@
 前端： vue2,es6
 后端： express
 
-项目预览地址：http://www.linyouhang.cn/2048/
+项目预览地址：http://www.linyouhang.cn
 
 
 ## Project setup
