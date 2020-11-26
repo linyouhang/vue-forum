@@ -59,6 +59,8 @@ img{
   float: right;
   display: flex;
   flex-direction: column;
+  text-align: center;
+
 }
 .introduce{
   color: rgb(144, 149, 152);

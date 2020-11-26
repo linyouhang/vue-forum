@@ -30,14 +30,14 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 a{
   cursor: pointer;
-  text-align: center;
   color:#42b983;
 }
 .contanier{
-  width: 50rem;
-  margin: 10rem auto;
+  width: 25rem;
+  margin: 20rem auto;
+  /* text-align: center; */
 }
 </style>

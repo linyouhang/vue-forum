@@ -33,6 +33,7 @@ export default {
   },
   created() {
     this.getList()
+    this.articleList = Object.freeze(this.articleList)
   },
   methods: {
     async getList() {

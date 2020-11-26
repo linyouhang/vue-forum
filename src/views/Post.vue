@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="contanier">
     <AppHeader></AppHeader>
     <el-form :model="articleForm" label-position="left" status-icon :rules="rules" ref="articleForm">
       <el-form-item label="标题" prop="title" required >
@@ -87,8 +87,12 @@ export default {
 </script>
 
 <style scoped>
-.el-form-item{
+.contanier{
+  width: 100%;
+}
+.el-form{
   width: 70rem;
+  margin: 0 auto;
 }
 .el-button{
   float: left;

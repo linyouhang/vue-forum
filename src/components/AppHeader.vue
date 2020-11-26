@@ -62,7 +62,7 @@ export default {
       this.$router.push('user/'+this.user._id)
     },
     toHome() {
-      this.$router.push('/')
+      window.location.href = '/'
     }
   }
 }
@@ -105,6 +105,7 @@ img{
 .link{
   line-height: 3rem;
   position: relative;
+  color :#42b983;
 }
 .link-right{
   float:right;

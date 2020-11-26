@@ -139,13 +139,10 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .bottom{
   padding-top: 1rem;
-  text-align: center;
-}
-.button{
-  margin-left: 5rem;
 }
 .stars{
   text-align: left;
